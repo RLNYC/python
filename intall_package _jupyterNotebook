@@ -1,0 +1,9 @@
+# source: https://jakevdp.github.io/blog/2017/12/05/installing-python-packages-from-jupyter/
+
+# Install a pip package in the current Jupyter kernel
+import sys
+!{sys.executable} -m pip install numpy
+
+# Install a conda package in the current Jupyter kernel
+import sys
+!conda install --yes --prefix {sys.prefix} numpy
